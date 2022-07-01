@@ -19,6 +19,8 @@ def get_symb(state):
 		return 'X'
 	elif (state == 2):
 		return 'O'
+	else:
+		return '?'
 
 
 #########################
@@ -27,7 +29,7 @@ def get_symb(state):
 
 def is_full(board):
 	for i in board:
-		if i == 0:
+		if (i == 0):
 			return 0
 	return 1
 

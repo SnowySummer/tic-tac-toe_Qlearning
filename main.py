@@ -95,5 +95,6 @@ def play():
 ####################
 
 if __name__ == "__main__":
-	#learn(1000000)
+	# Trying to converge the Q-table
+	learn(1000000)
 	play()

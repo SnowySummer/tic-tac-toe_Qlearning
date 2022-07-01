@@ -5,7 +5,7 @@ This is not a great idea, not necesarilly because the Q-learning algorithm is ba
 The Q learning algorithm is an algorithm in which an agent takes a decision based on a score found during training. This score depends on the state of the problem and the available decision. By trying out different scenarios, we end up with a table full of scores to determine which is the optimal solution
 
 First of all, the Q learning equation :
-> $Q[state][action] = (1 - \alpha) * Q[state][action] + \alpha(reward + \gamma * max_{a} Q[next-state][a])$
+> $Q[state][action] = (1 - \alpha) * Q[state][action] + \alpha(reward + \gamma * max_{a} Q[next\_state][a])$
 
 This is the driving force of the Q-learning algorithm. It basically says that if we made a good decision, we give it a reward, and if it didn't, we punish him. Also, we update our scores according to the best next state, and therein lies our problem. The best next state in not necessarily the one in which we find ourselves.
 
